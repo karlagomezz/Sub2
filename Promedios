@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class PromedioCalificaciones {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Entrada
+        System.out.print("Matematicas: ");
+        float mat = sc.nextFloat();
+
+        System.out.print("Español: ");
+        float esp = sc.nextFloat();
+
+        System.out.print("Quimica: ");
+        float qui = sc.nextFloat();
+
+        System.out.print("Fisica: ");
+        float fis = sc.nextFloat();
+
+        System.out.print("Literatura: ");
+        float lit = sc.nextFloat();
+
+        // Proceso
+        float promedio = (mat + esp + qui + fis + lit) / 5;
+
+        // Salida
+        System.out.println("El promedio general es: " + promedio);
+    }
+}
+}
